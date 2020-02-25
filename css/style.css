@@ -312,6 +312,8 @@ html {
     }
 }
 
+/* About me */
+
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -321,14 +323,18 @@ html {
     box-shadow: var(--bs);
 }
 
+.about-me_body {
+    margin-top: -1em;
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 300px;
+        grid-template-columns: 300px 1fr;
         grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
+            "img title"
+            "img subtitle"
+            "img text";
         grid-column-gap: 1em;    
     }
 
@@ -348,8 +354,8 @@ html {
         position: relative;
         left: -1em;
         width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em)
+        /*padding-left: 1em;*/
+        padding-left: calc(300px + 2em)
     }
 }
 
@@ -368,13 +374,14 @@ html {
 }
 
 .portfolio {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
     margin: 0 auto;
 }
 
 .portfolio_item {
-    background-color: var(--clr-accent);
+    /*background-color: var(--clr-accent);*/
     overflow: hidden;
 }
 
