@@ -240,13 +240,31 @@ html {
 .section_subtitle-intro {
     animation-name: subtitle_intro;
     animation-duration: 1.7s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
 }
 .intro_img {
     animation: fadein;
     animation-name: intro_img;
     animation-duration: 1.7s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
+}
+
+@keyframes title_intro {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes subtitle_intro {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes intro_img {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0;}
+    85% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @media (min-width: 600px) {
@@ -279,46 +297,36 @@ html {
     }
     
     @keyframes title_intro {
-        0% {
-            opacity: 0; 
-        }
-        100% {
-            opacity: 1;
-        }
+        0% {opacity: 0; }
+        100% {opacity: 1;}
     }
     @keyframes subtitle_intro {
         0% {
             opacity: 0;
-            left: 100.5em;
+            left: 100em;
             top: 0px; 
         }
-        50% {
-            opacity: 0;
-        }
-        75% {
-            opacity: 0;
-        }
+        50% {opacity: 0;}
+        75% {opacity: 0;}
         100% {
             opacity: 1;
             left: -1.5em;
             top: 0px;
         }
     }
-    
     @keyframes intro_img {
         0%  {
             opacity: 0;
-            top: -350px;
+            top: -100px;
         }
+        25%{opacity:0;}
+        50% {opacity: 0;}
         100% {
             opacity: 1;
             top: 0px;
         }
     }
-
 }
-
-
 
 .intro_img {
     box-shadow: var(--bs);
