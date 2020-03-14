@@ -512,5 +512,8 @@ html {
     justify-content: center;
     font-size: var(--fs-body);
     background-color: #111111;
-    opacity: .6;:
+    opacity: .8;
+    height: 2rem;
+    font-size: .8rem;
 }
+
