@@ -468,7 +468,7 @@ html {
     background-color: #111111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding-top: 1rem;
     font-size: var(--fs-h3);
     margin:0;
 }
@@ -476,6 +476,7 @@ html {
 .footer a {
     color: inherit;
     text-decoration: none;
+   
 } 
 
 .footer_link {
@@ -495,7 +496,7 @@ html {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 2rem 0 0;
     padding: 0;
 }
 
@@ -513,7 +514,8 @@ html {
     font-size: var(--fs-body);
     background-color: #111111;
     opacity: .8;
-    height: 2rem;
+    padding: 25px;
     font-size: .8rem;
+    margin: 0;
 }
 
