@@ -1,7 +1,7 @@
 
-#FRONTEND DEVELOPER PORTFOLIO
+# FRONTEND DEVELOPER PORTFOLIO
 
-##Description
+## Description
 
 Personal website for Front-End Developer made with plain HTML and CSS.
 Responsive design, little bit JavaScript but no frameworks and other 3rd party tools were used.
